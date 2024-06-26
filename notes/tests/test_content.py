@@ -17,7 +17,7 @@ class TestContent(TestCase):
         cls.note = Note.objects.create(
             title='Заголовок',
             text='Текст заметки',
-            slug='note-slug',
+            slug='test-note',
             author=cls.author,
         )
         cls.URL_NOTES_LIST = reverse('notes:list')
